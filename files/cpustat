@@ -93,9 +93,9 @@ sub get_arch_info {
 
     my $arch_info;
     if($a) {
-        $arch_info = "AArch64 : " if ($a);
+        $arch_info = "ARMv8 : " if ($a);
     } else {
-        $arch_info = "AArch64 Processor : ";
+        $arch_info = "ARMv8 Processor : ";
     }
     for (my $i = 0; $i < $#cpu_groups + 1; $i++) {
         my $group = $cpu_groups[$i];
